@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>El pequeño servicio REST de INEGI fácil</h1>
+  <h2>(use con cuidado, estamos en un servidor compartido <span>u___u</span>)</h2>
+
+  <h3>Uso básico</h3>
+  <p>El endpoint es: <em>http://inegifacil.com/rest/</em></p>
+
+  <h4>Obtener índice</h4>
+  <p>Para obtener la información agregada para todo México de un indicador, se debe agregar 
+    "indice" al <em>endpoint</em> y la clave correspondiente del mismo: </p>
+
+  <blockquote>
+    <p>http://inegifacil.com/rest/indice/1002000001</p>
+    <p>(la población total de México)</p>
+  </blockquote>
+
+  <p>Si se quiere la información agregada por estado o por ciudad, hay que añadir
+    a lo anterior el id de la ubicación deseada:</p>
+
+  <blockquote>
+    <p>http://inegifacil.com/rest/indice/1002000001/21000</p>
+    <p>(la población total del estado de Puebla)</p>
+  </blockquote>
+
+  <blockquote>
+    <p>http://inegifacil.com/rest/indice/1002000001/21132</p>
+    <p>(la población total para la ciudad de San Martín Texmelucan, Puebla)</p>
+  </blockquote>
+
+  <p>Si se quirere solo el útimo valor del indicador, hay que agregar un "1" al final:</p>
+
+  <blockquote>
+    <p>http://inegifacil.com/rest/indice/1002000001/21000/1</p>
+    <p>(la población total del estado de Puebla, el último valor)</p>
+  </blockquote>
+
+  <p>Por último, si se quiere ver el resultado y algunos detalles extra, se puede agregar
+    una "i" como segmento final:</p>
+
+  <blockquote>
+    <p>http://inegifacil.com/rest/indice/1002000001/i</p>
+  </blockquote>
+
+</body>
+</html>
